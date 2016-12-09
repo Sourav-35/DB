@@ -1,0 +1,31 @@
+CREATE DATABASE helpingHand
+
+create TABLE helpDetails
+(
+  PRIMARY KEY(slNo),
+  slNo INT not null auto_increment,
+  empId VARCHAR(255),
+  contactNo VARCHAR(255),
+  help VARCHAR(255),
+  details VARCHAR(255),
+  typeofNeed VARCHAR(255),  	
+) 
+
+create TABLE fHelp
+( PRIMARY KEY(slNo),
+  slNo INT not null auto_increment,
+  nameOfBank VARCHAR(255) NOT NULL,
+  branch VARCHAR(255),
+  accountHolderName VARCHAR(255),
+  ifscCode VARCHAR(255),
+  amount VARCHAR(255)  	
+); 
+
+create TABLE nfHelp
+( PRIMARY KEY(slNo),
+  slNo INT not null auto_increment,
+  bloodGroup VARCHAR(255) NOT NULL,
+  hospitalName VARCHAR(255) NOT NULL 	
+) 
+
+
